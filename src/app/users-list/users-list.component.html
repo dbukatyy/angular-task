@@ -1,5 +1,6 @@
 <ul>
-	<li *ngFor="let user of users"> 
+	<li *ngFor="let user of users"
+		(click)="onSelect(user)"> 
 		<span>{{user.id}}</span>
 		<div>
 			<p>{{user.name}}</p>
@@ -7,3 +8,5 @@
 		</div>
 	</li>
 </ul>
+
+<app-modal [user]="selectedUser" [open]="openModal" (click)="onModalOff()"></app-modal>

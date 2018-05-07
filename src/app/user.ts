@@ -2,7 +2,7 @@ interface ICompany {
 	name: string;
 	catchPhrase: string;
 	bs: string;
-}
+};
 
 interface IAddress {
     street: string;
@@ -13,7 +13,8 @@ interface IAddress {
     	lat: number;
     	lng: number;
     }
-}
+};
+
 interface IUser {
     id: number;
 	name: string;
@@ -22,7 +23,6 @@ interface IUser {
 	phone: number;
 	website: string;
 	company: ICompany;
-}
-
+};
 
 export class User: IUser;
