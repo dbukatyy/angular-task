@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../user'
+import { User } from './user'
 
 @Component({
   selector: 'app-users-list',
-  templateUrl: './users-list.component.html',
-  styleUrls: ['./users-list.component.css']
+  templateUrl: '../html/users-list.component.html',
+  styleUrls: ['../css/users-list.component.css']
 })
+
 export class UsersListComponent implements OnInit {
 
   users: User[];

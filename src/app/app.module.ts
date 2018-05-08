@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { UsersListComponent } from './users-list/users-list.component';
-import { ModalComponent } from './modal/modal.component';
+import { AppComponent } from './ts/app.component';
+import { UsersListComponent } from './ts/users-list.component';
+import { ModalComponent } from './ts/modal.component';
 
 @NgModule({
   declarations: [

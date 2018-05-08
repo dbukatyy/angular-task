@@ -1,10 +1,13 @@
 <div class="modal" *ngIf="open">
 	<article class="modal__inner">
+
 		<button class="modal__close">&#10008;</button>
+
 		<header class="modal__title">
 			<h2>{{user.username | uppercase}}</h2>
 			<p>({{ user.name }})</p>
 		</header>
+
 		<table>
 			<tr>
 				<td>E-mail:</td>
@@ -33,5 +36,6 @@
 				<td>{{user.company.name}}</td>
 			</tr>
 		</table>
+		
 	</article>
 </div>
