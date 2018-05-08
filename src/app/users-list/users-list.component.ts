@@ -12,7 +12,9 @@ export class UsersListComponent implements OnInit {
 
   selectedUser: User;
 
-  openModal: boolean = false;
+  openModal: boolean;
+
+  dataLoaded: boolean = false;
 
   constructor() { }
 
@@ -25,6 +27,7 @@ export class UsersListComponent implements OnInit {
   		.then(response => response.json())
   		.then(persons => {
     		this.users = persons;
+        this.dataLoaded = true;
   		})
   }
 
@@ -37,7 +40,7 @@ export class UsersListComponent implements OnInit {
 
   onModalOff(e): void {
   	this.openModal = false;
-  	localStorage.setItem('openModal', false);
+  	localStorage.setItem('openModal', 'false');
   }
 
 }

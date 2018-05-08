@@ -1,4 +1,5 @@
-<ul>
+<p class="preloader" *ngIf="!dataLoaded">Loading...</p>
+<ul *ngIf="dataLoaded">
 	<li *ngFor="let user of users"
 		(click)="onSelect(user)"> 
 		<span>{{user.id}}</span>

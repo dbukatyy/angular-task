@@ -1,6 +1,37 @@
-<div *ngIf="open">
-
-  <h2>{{ user.name | uppercase }}</h2>
-  <div><span>id: </span>{{user.id}}</div>
-
+<div class="modal" *ngIf="open">
+	<article class="modal__inner">
+		<button class="modal__close">&#10008;</button>
+		<header class="modal__title">
+			<h2>{{user.username | uppercase}}</h2>
+			<p>({{ user.name }})</p>
+		</header>
+		<table>
+			<tr>
+				<td>E-mail:</td>
+				<td>
+					<a href="mailto:">{{user.email}}</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td>{{user.address.city}},{{user.address.street}}, {{user.address.suite}}</td>
+			</tr>
+			<tr>
+				<td>Phone:</td>
+				<td>
+					<a href="tel:">{{user.phone}}</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Website:</td>
+				<td>
+					<a href="">{{user.website}}</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Company</td>
+				<td>{{user.company.name}}</td>
+			</tr>
+		</table>
+	</article>
 </div>

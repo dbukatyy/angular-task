@@ -1,28 +1,23 @@
-interface ICompany {
-	name: string;
-	catchPhrase: string;
-	bs: string;
-};
 
-interface IAddress {
-    street: string;
-    suite: string;
-    city: string;
-    zipcode: number;
-    geo: {
-    	lat: number;
-    	lng: number;
-    }
-};
-
-interface IUser {
-    id: number;
+export class User {
+	id: number;
 	name: string;
 	email: string;
-	address: IAddress;
+	address: {
+	    street: string;
+	    suite: string;
+	    city: string;
+	    zipcode: number;
+	    geo: {
+	    	lat: number;
+	    	lng: number;
+	    };
+	};
 	phone: number;
 	website: string;
-	company: ICompany;
+	company: {
+		name: string;
+		catchPhrase: string;
+		bs: string;
+	};
 };
-
-export class User: IUser;
