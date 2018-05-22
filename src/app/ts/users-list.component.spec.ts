@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UsersListComponent } from './users-list.component';
+import { ModalComponent } from './modal.component';
 
 describe('UsersListComponent', () => {
   let component: UsersListComponent;
@@ -8,7 +9,7 @@ describe('UsersListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UsersListComponent ]
+      declarations: [ UsersListComponent, ModalComponent ]
     })
     .compileComponents();
   }));
