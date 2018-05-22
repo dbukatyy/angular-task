@@ -24,33 +24,35 @@ li {
 	width: 49%;
 	margin-bottom: 10px;
 	cursor: pointer;
-}
 
-li:hover div {
-	color: #fff;
-}
+	&:hover {
+		div {
+			color: #fff;
+		}
+	}
 
-li span {
-	background: #42b983;
-	color: #35495e;
-	display: flex;
-	-ms-align-items: center;
-	align-items: center;
-	justify-content: center;
-	width: 50px;
-}
+	span {
+		background: #42b983;
+		color: #35495e;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+	}
 
-li div {
-	background: #35495e;
-	color: #42b983;
-	flex:1;
-	padding: 10px;
-	line-height: 1.5em;
-	transition: all .3s;
-}
+	div {
+		background: #35495e;
+		color: #42b983;
+		flex:1;
+		padding: 10px;
+		line-height: 1.5em;
+		transition: all .3s;
+	}
 
-li p {
-	margin: 0;
+	p {
+		margin: 0;
+	}
 }
 
 .preloader {

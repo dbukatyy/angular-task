@@ -4,12 +4,12 @@ import { User } from './user';
 @Component({
   selector: 'app-modal',
   templateUrl: '../html/modal.component.html',
-  styleUrls: ['../css/modal.component.css']
+  styleUrls: ['../css/modal.component.less']
 })
 export class ModalComponent implements OnInit {
 
-  @Input() user;
-  @Input() open: boolean;
+  @Input('user') user: User;
+  @Input('open') open: boolean;
 
   constructor() { }
 
